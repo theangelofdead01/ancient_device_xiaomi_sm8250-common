@@ -20,3 +20,5 @@ allow system_app vendor_diag_device:chr_file { read write open };
 allow system_app vendor_diag_device:chr_file { read write };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app default_android_hwservice:hwservice_manager { find };
